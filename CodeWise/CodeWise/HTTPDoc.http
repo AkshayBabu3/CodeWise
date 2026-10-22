@@ -1,0 +1,84 @@
+###
+GET http://127.0.0.1:8000/question/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/question/
+Content-Type: application/json
+
+{
+    "title": "Factorial of a number",
+    "language": "Python",
+    "difficulty_level": "Medium",
+    "topic": "For loop",
+    "score": "",
+    "notes": "This is a sample program to check whether the given number is a prime number",
+    "sample_input": "",
+    "sample_output": "Prime Number"
+}
+
+###
+
+POST http://127.0.0.1:8000/question/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "title": "Sum of two numbers",
+    "language": "",
+    "difficulty_level": "easy",
+    "topic": "",
+    "score": 5,
+    "notes": "",
+    "sample_input": "5,3",
+    "sample_output": "8"
+}
+
+###
+GET http://127.0.0.1:8000/question/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/question/5/
+Content-Type: application/json
+
+{
+  "title": "Factorial of a number",
+  "language": "python",
+  "difficulty_level": "medium",
+  "topic": "For loop",
+  "score": 7,
+  "published_date": "2026-10-14T05:23:11.344596Z",
+  "notes": "This is a sample program to check whether the given number is a prime number",
+  "sample_input": "5",
+  "sample_output": "Prime Number",
+  "is_active": true
+}
+
+###
+DELETE http://127.0.0.1:8000/question/7/
+
+
+
+###
+GET http://127.0.0.1:8000/submissions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/submissions/
+Content-Type: application/json
+
+{
+  "question_id":3,
+  "answer":"factorial of 5 is 120",
+  "owner":"Akshay"
+}
+
+###
+PUT http://127.0.0.1:8000/submissions/1/
+Content-Type: application/json
+
+{
+  "points": 5,
+  "remarks": "Average Logic"
+}

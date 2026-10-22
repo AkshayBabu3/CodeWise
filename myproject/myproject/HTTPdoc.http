@@ -1,0 +1,49 @@
+
+
+###
+GET  http://127.0.0.1:8000/morning
+Accept: application/json
+
+###
+POST http://127.0.0.1:8001/add/
+Content-Type: application/json
+
+{
+    "num1":10,
+    "num2":25
+}
+###
+POST http://127.0.0.1:8001/sub/
+Content-Type: application/json
+
+{
+    "num1":20,
+    "num2":17
+}
+
+###
+POST http://127.0.0.1:8001/mul/
+Content-Type: application/json
+
+{
+    "a":10,
+    "b":20
+}
+
+###
+POST http://127.0.0.1:8001/large/
+Content-Type: application/json
+
+{
+    "a":10,
+    "b":40
+}
+
+###
+POST http://127.0.0.1:8001/far/
+Content-Type: application/json
+
+{
+    "cel":23,
+    "far":98
+}
